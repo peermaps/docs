@@ -5,72 +5,74 @@ primitives in OpenGL (e.g., GL_POINTS) with minimal linear processing.
 
 All of the below are little endian.
 
+VARINT provides a compact encoding for whole numbers. For integers less than 128
+the VARINT encoding is a single byte. Learn more at https://www.npmjs.com/package/varint.
 
 # FEATURE: POINT      
 
-| No. of bytes | Type [Value]  | Description                 |
-|--------------|---------------|-----------------------------|
-| 1            | U8 [0x01]     | feature type                |
-| 4            | U32           | type                        |
-| 8            | U64           | id                          |
-| 4            | F32           | position lon                |
-| 4            | F32           | position lat                |
-| 1            | U8            | l_count (# of labels)       |
-| -            | LABEL[l_count]| labels                      |
+| Type [Value]  | Description                 |
+|---------------|-----------------------------|
+| U8 [0x01]     | feature type                |
+| VARINT        | type                        |
+| VARINT        | id                          |
+| F32           | position lon                |
+| F32           | position lat                |
+| U8            | l_count (# of labels)       |
+| LABEL[l_count]| labels                      |
 
 
 # FEATURE: LINE
 
-| No. of bytes | Type [Value]     | Description              |
-|--------------|------------------|--------------------------|
-| 1            | U8 [0x02]        | feature type             |
-| 4            | U32              | type                     |
-| 8            | U64              | id                       |
-| 2            | U16              | p_count (# of positions) |
-| 8*p_count    | POSITION[p_count]| positions                |
-| 1            | U8               | l_count (# of labels)    |
-| -            | LABEL[l_count]   | labels                   |
+| Type [Value]     | Description              |
+|------------------|--------------------------|
+| U8 [0x02]        | feature type             |
+| VARINT           | type                     |
+| VARINT           | id                       |
+| VARINT           | p_count (# of positions) |
+| POSITION[p_count]| positions                |
+| U8               | l_count (# of labels)    |
+| LABEL[l_count]   | labels                   |
 
 
 # FEATURE: AREA
 
-| No. of bytes | Type [Value]     | Description              |
-|--------------|------------------|--------------------------|
-| 1            | U8 [0x03]        | feature type             |
-| 4            | U32              | type                     |
-| 8            | U64              | id                       |
-| 2            | U16              | p_count (# of positions) |
-| 8*p_count    | POSITION[p_count]| positions                |
-| 2            | U16              | c_count (# of cells)     |
-| 6*c_count    | CELL[c_count]    | cells                    |
-| 1            | U8               | l_count (# of labels)    |
-| -            | LABEL[l_count]   | labels                   |
+| Type [Value]     | Description              |
+|------------------|--------------------------|
+| U8 [0x03]        | feature type             |
+| VARINT           | type                     |
+| VARINT           | id                       |
+| VARINT           | p_count (# of positions) |
+| POSITION[p_count]| positions                |
+| VARINT           | c_count (# of cells)     |
+| CELL[c_count]    | cells                    |
+| VARINT           | l_count (# of labels)    |
+| LABEL[l_count]   | labels                   |
 
 
 # POSITION
 
-| No. of bytes | Type [Value] | Description                  |
-|--------------|--------------|------------------------------|
-| 4            |  F32         | longitude                    |
-| 4            |  F32         | latitude                     |
+| Type [Value] | Description                  |
+|--------------|------------------------------|
+|  F32         | longitude                    |
+|  F32         | latitude                     |
 
 
 # CELL
 
-| No. of bytes | Type [Value] | Description                  |
-|--------------|--------------|------------------------------|
-| 2            |  U16         | i element index              |
-| 2            |  U16         | j element index              |
-| 2            |  U16         | k element index              |
+| Type [Value] | Description                  |
+|--------------|------------------------------|
+|  VARINT      | i element index              |
+|  VARINT      | j element index              |
+|  VARINT      | k element index              |
 
 i, j, and k are indexes into the position array.
 
 # LABEL
 
-| No. of bytes | Type [Value] | Description                  |
-|--------------|--------------|------------------------------|
-| 2            |  U16         | length                       |
-| length       |  [U8]        | data                         |
+| Type [Value] | Description                  |
+|--------------|------------------------------|
+|  VARINT      | length                       |
+|  [U8]        | data                         |
 
 for a single item, there may be multiple labels. each label has a length and a
 data field. these are written serially and the list of labels ends with a label
