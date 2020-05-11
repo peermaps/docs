@@ -107,10 +107,10 @@ for this tag data:
 the packed label data would be:
 
 ```
-\x14\x00=Aoraki / Mount Cook
-\x0d\x00en=Mount Cook
-\x09\x00mi=Aoraki
-\x00\x00
+\x14=Aoraki / Mount Cook
+\x0den=Mount Cook
+\x09mi=Aoraki
+\x00
 ```
 
 for this tag data:
@@ -127,11 +127,11 @@ for this tag data:
 the packed label data would be:
 
 ```
-\x0c\x00=Toshkent
-\x0f\x00kaa=Tashkent
-\x0e\x00en=Tashkent
-\x11\x00alt:uz=Тoшкент
-\x00\x00
+\x0c=Toshkent
+\x0fkaa=Tashkent
+\x0een=Tashkent
+\x11alt:uz=Тoшкент
+\x00
 ```
 
 please also see https://wiki.openstreetmap.org/wiki/Key:name and https://wiki.openstreetmap.org/wiki/Multilingual_names
