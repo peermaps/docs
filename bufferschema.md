@@ -17,8 +17,7 @@ the VARINT encoding is a single byte. Learn more at https://www.npmjs.com/packag
 | VARINT        | id                          |
 | F32           | position lon                |
 | F32           | position lat                |
-| U8            | l_count (# of labels)       |
-| LABEL[l_count]| labels                      |
+| LABEL[...]    | labels                      |
 
 
 # FEATURE: LINE
@@ -30,8 +29,7 @@ the VARINT encoding is a single byte. Learn more at https://www.npmjs.com/packag
 | VARINT           | id                       |
 | VARINT           | p_count (# of positions) |
 | POSITION[p_count]| positions                |
-| U8               | l_count (# of labels)    |
-| LABEL[l_count]   | labels                   |
+| LABEL[...]       | labels                   |
 
 
 # FEATURE: AREA
@@ -45,8 +43,7 @@ the VARINT encoding is a single byte. Learn more at https://www.npmjs.com/packag
 | POSITION[p_count]| positions                |
 | VARINT           | c_count (# of cells)     |
 | CELL[c_count]    | cells                    |
-| VARINT           | l_count (# of labels)    |
-| LABEL[l_count]   | labels                   |
+| LABEL[...]       | labels                   |
 
 
 # POSITION
