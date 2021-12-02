@@ -45,6 +45,39 @@ the VARINT encoding is a single byte. Learn more at https://www.npmjs.com/packag
 | CELL[c_count]    | cells                    |
 | LABEL[...]       | labels                   |
 
+Areas represent polygon shapes.
+
+Edges can be inferred from the cells array for the purposes of drawing borders
+around each area by counting the frequency of each normalized edge pair
+(`[i,j]`, `[j,k]`, `[k,i]` with the lower or higher coordinate always first) .
+
+For areas, all edges with a count `!= 1` are presumed to be on the surface of
+the polygon, either on the exterior surface or along the interior surfaces for
+holes. If you need to do include interior points for mesh refinement or have
+explicit control over which edges are along the polygon surface (for example,
+when clipping large geometries), use `AREA_WITH_EDGES` below.
+
+# FEATURE: AREA_WITH_EDGES
+
+| Type [Value]          | Description                  |
+|-----------------------|------------------------------|
+| U8 [0x04]             | feature type                 |
+| VARINT                | type                         |
+| VARINT                | id                           |
+| VARINT                | p_count (# of positions)     |
+| POSITION[p_count]     | positions                    |
+| VARINT                | c_count (# of cells)         |
+| CELL[c_count]         | cells                        |
+| VARINT                | e_count (# of edges)         |
+| EDGE[e_count]         | edges                        |
+| LABEL[...]            | labels                       |
+
+This variation of areas gives you explicit control over edges.
+
+There are two ways of specifying edges: as explicit pairs of indexes into the
+positions array and as "windowed" indexes to save space for the common case
+where contiguous positions are linked together to form edges. See the EDGES
+section below for more details.
 
 # POSITION
 
@@ -63,6 +96,30 @@ the VARINT encoding is a single byte. Learn more at https://www.npmjs.com/packag
 |  VARINT      | k element index              |
 
 i, j, and k are indexes into the position array.
+
+# EDGE
+
+| Type [Value] | Description                     |
+|--------------|---------------------------------|
+|  VARINT      | i: see below                    |
+|  VARINT      | j element index or window_len   |
+
+Each edge is either an "edge pair" (when `i%2 == 0`) or an "edge pair window"
+(when `i%2 == 1`).
+
+If the edge is an "edge pair", divide i by 2 and discard the remainder to obtain
+the first element index of the pair. A single edge is represented by the indexes
+into the positions array `floor(i/2)` and `j`.
+
+If the edge is an "edge pair window", divide i by 2 and discard the remainder to
+obtain the inclusive window start index. `j` is the window length.
+
+Edge pairs are generated in the window scheme by iterating `k` from
+`window_start` (inclusive) to `window_start+window_len` (exclusive) producing
+an edge pair `[k,k+1]` for each iteration.
+
+If the `window_start` is `5` and the `window_len` is `3`, the inferred set of
+edge pairs would be: `[[5,6],[6,7],[7,8]]`
 
 # LABEL
 
