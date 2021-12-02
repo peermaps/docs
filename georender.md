@@ -49,7 +49,8 @@ Areas represent polygon shapes.
 
 Edges can be inferred from the cells array for the purposes of drawing borders
 around each area by counting the frequency of each normalized edge pair
-(`[i,j]`, `[j,k]`, `[k,i]` with the lower or higher coordinate always first) .
+(`[i,j]`, `[j,k]`, `[k,i]` with for example the lower coordinate always in the
+first position).
 
 For areas, all edges with a count `!= 1` are presumed to be on the surface of
 the polygon, either on the exterior surface or along the interior surfaces for
