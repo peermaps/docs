@@ -54,7 +54,7 @@ first position).
 
 For areas, all edges with a count `!= 1` are presumed to be on the surface of
 the polygon, either on the exterior surface or along the interior surfaces for
-holes. If you need to do include interior points for mesh refinement or have
+holes. If you need to include interior points for mesh refinement or have
 explicit control over which edges are along the polygon surface (for example,
 when clipping large geometries), use `AREA_WITH_EDGES` below.
 
