@@ -139,9 +139,9 @@ gets interpreted and expanded into three runs of edges:
 
 ```
 [
-	[3,8,2],
-	[30,31,32,33,34,40],
-	[2,5,11,12,13,14]
+  [3,8,2],
+  [30,31,32,33,34,40],
+  [2,5,11,12,13,14]
 ]
 ```
 
@@ -176,9 +176,9 @@ for this tag data:
 
 ```json
 {
-	"name": "Aoraki / Mount Cook",
-	"name:en": "Mount Cook",
-	"name:mi": "Aoraki"
+  "name": "Aoraki / Mount Cook",
+  "name:en": "Mount Cook",
+  "name:mi": "Aoraki"
 }
 ```
 
@@ -195,10 +195,10 @@ for this tag data:
 
 ```json
 {
-	"name": "Toshkent",
-	"name:kaa": "Tashkent",
-	"name:en": "Tashkent",
-	"alt_name:uz": "Тoшкент"
+  "name": "Toshkent",
+  "name:kaa": "Tashkent",
+  "name:en": "Tashkent",
+  "alt_name:uz": "Тoшкент"
 }
 ```
 
