@@ -109,10 +109,10 @@ of an area for both exterior and interior surfaces.
 
 If `i == 0`, this position is an "edge break" (see below).
 
-If `i%2 == 0`, `floor((i-1)/2)` is an index into the positions array.
+If `i%2 == 0`, `floor(i/2)-1` is an index into the positions array.
 
 If `i%2 == 1`, a range of ascending consecutive edge indexes is described from
-the previous edge index up to the inclusive edge index of `floor((i-1)/2)`.
+the previous edge index up to the inclusive edge index of `floor(i/2)-1`.
 
 For example, the following edge index sequence values:
 
