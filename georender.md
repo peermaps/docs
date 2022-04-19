@@ -69,15 +69,15 @@ when clipping large geometries), use `AREA_WITH_EDGES` below.
 | POSITION[p_count]     | positions                    |
 | VARINT                | c_count (# of cells)         |
 | CELL[c_count]         | cells                        |
-| VARINT                | e_count (# of edges)         |
-| EDGE[e_count]         | edges                        |
+| VARINT                | e_count (# of edge_indexes)  |
+| EDGE_INDEX[e_count]   | edge_indexes                 |
 | LABEL[...]            | labels                       |
 
 This variation of areas gives you explicit control over edges.
 
 There are two ways of specifying edges: as explicit pairs of indexes into the
 positions array and as "windowed" indexes to save space for the common case
-where contiguous positions are linked together to form edges. See the EDGES
+where contiguous positions are linked together to form edges. See the EDGE_INDEX
 section below for more details.
 
 # POSITION
@@ -98,29 +98,52 @@ section below for more details.
 
 i, j, and k are indexes into the position array.
 
-# EDGE
+# EDGE_INDEX
+
+Edge indexes connect verticies from the positions array along the surface rings
+of an area for both exterior and interior surfaces.
 
 | Type [Value] | Description                     |
 |--------------|---------------------------------|
 |  VARINT      | i: see below                    |
-|  VARINT      | j element index or window_len   |
 
-Each edge is either an "edge pair" (when `i%2 == 0`) or an "edge pair window"
-(when `i%2 == 1`).
+If `i == 0`, this position is an "edge break" (see below).
 
-If the edge is an "edge pair", divide i by 2 and discard the remainder to obtain
-the first element index of the pair. A single edge is represented by the indexes
-into the positions array `floor(i/2)` and `j`.
+If `i%2 == 0`, `floor((i-1)/2)` is an index into the positions array.
 
-If the edge is an "edge pair window", divide i by 2 and discard the remainder to
-obtain the inclusive window start index. `j` is the window length.
+If `i%2 == 1`, a range of ascending consecutive edge indexes is described from
+the previous edge index up to the inclusive edge index of `floor((i-1)/2)`.
 
-Edge pairs are generated in the window scheme by iterating `k` from
-`window_start` (inclusive) to `window_start+window_len` (exclusive) producing
-an edge pair `[k,k+1]` for each iteration.
+For example, the following edge index sequence values:
 
-If the `window_start` is `5` and the `window_len` is `3`, the inferred set of
-edge pairs would be: `[[5,6],[6,7],[7,8]]`
+```
+[8,6,16,102,115,20,32]
+```
+
+get interpreted and expanded to:
+
+```
+[3,2,7,50,51,52,53,54,55,56,9,15]
+```
+
+An "edge break" splits up runs of edges, like picking up a pen between strokes.
+These breaks are represented by a value of `0`.
+
+For example, this sequence:
+
+```
+[8,18,6,0,62,69,41,0,6,12,24,31]
+```
+
+gets interpreted and expanded into three runs of edges:
+
+```
+[
+	[3,8,2],
+	[30,31,32,33,34,40],
+	[2,5,11,12,13,14]
+]
+```
 
 # LABEL
 
