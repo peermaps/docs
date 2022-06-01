@@ -172,9 +172,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.52803096"
-     inkscape:cx="413.33223"
-     inkscape:cy="629.67701"
+     inkscape:zoom="2.1121238"
+     inkscape:cx="1567.3956"
+     inkscape:cy="2108.9989"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -425,7 +425,7 @@
          id="tspan19789"
          x="278.87094"
          y="95.916695"
-         style="stroke-width:0.26458332">point-fill-opacity (1-100; 100 is fully opaque)</tspan></text>
+         style="stroke-width:0.26458332">point-opacity (1-100; 100 is fully opaque)</tspan></text>
     <rect
        y="125.02076"
        x="251.35411"
@@ -526,7 +526,7 @@
          y="139.91426"
          x="278.86945"
          id="tspan19947"
-         sodipodi:role="line">point-zindex (higher is on top; --must be &gt;0)</tspan></text>
+         sodipodi:role="line">point-zindex (higher is on top; must be &gt;0)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -559,7 +559,7 @@
          y="61.52734"
          x="254.9323"
          id="tspan4993"
-         sodipodi:role="line">areaborder_start=area_start+zn*3</tspan></text>
+         sodipodi:role="line">areaborder_start=area_start+zn*6</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -16874,7 +16874,7 @@
          y="115.76044"
          x="278.87115"
          id="tspan7603"
-         sodipodi:role="line">point-stroke-opacity (1-100; 100 is fully opaque)</tspan></text>
+         sodipodi:role="line">(reserved: must be &gt;0)</tspan></text>
     <text
        id="text7609"
        y="114.17284"
