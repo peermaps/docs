@@ -16,7 +16,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.5 (2060ec1f9f, 2020-04-08)"
-   sodipodi:docname="texturediagram-zooms.svg"
+   sodipodi:docname="texturediagram.svg"
    inkscape:export-filename="/home/marina/dev/georender-style2png/texturediagram2.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
@@ -172,9 +172,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3020617"
+     inkscape:zoom="1.8413933"
      inkscape:cx="1566.7751"
-     inkscape:cy="183.79929"
+     inkscape:cy="5544.8262"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -526,7 +526,7 @@
          y="139.91426"
          x="278.86945"
          id="tspan19947"
-         sodipodi:role="line">point-zindex (higher is on top; must be &gt;0)</tspan></text>
+         sodipodi:role="line">point-zindex (higher is on top)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -900,7 +900,7 @@
          y="219.55359"
          x="278.86942"
          id="tspan12901"
-         sodipodi:role="line">sprite1 (must be &gt;0)</tspan></text>
+         sodipodi:role="line">sprite1</tspan></text>
     <text
        id="text12907"
        y="213.12668"
@@ -1154,7 +1154,7 @@
            y="241.70192"
            x="278.87112"
            id="tspan20057"
-           sodipodi:role="line">(reserved: must be &gt;0)</tspan></text>
+           sodipodi:role="line">(reserved)</tspan></text>
       <text
          id="text20063"
          y="240.11438"
@@ -1607,7 +1607,7 @@
            id="tspan13181"
            x="278.86938"
            y="365.07449"
-           style="stroke-width:0.26458332">sprite 1(must be &gt;0)</tspan></text>
+           style="stroke-width:0.26458332">sprite 1</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -5656,7 +5656,7 @@
            id="tspan6137"
            x="278.86984"
            y="578.06512"
-           style="stroke-width:0.26458332">(reserved: must be &gt;0)</tspan></text>
+           style="stroke-width:0.26458332">(reserved)</tspan></text>
     </g>
     <g
        id="g7447"
@@ -5814,7 +5814,7 @@
            y="410.84656"
            x="278.86966"
            id="tspan20165"
-           sodipodi:role="line">(reserved: must be &gt;0)</tspan></text>
+           sodipodi:role="line">(reserved)</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -6177,7 +6177,7 @@
            id="tspan6617"
            x="278.86966"
            y="490.75107"
-           style="stroke-width:0.26458332">(reserved: must be &gt;0)</tspan></text>
+           style="stroke-width:0.26458332">(reserved)</tspan></text>
       <text
          xml:space="preserve"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -16872,8 +16872,8 @@
          style="stroke-width:0.26458332"
          y="115.76044"
          x="278.87115"
-         id="tspan7603"
-         sodipodi:role="line">(reserved: must be &gt;0)</tspan></text>
+         sodipodi:role="line"
+         id="tspan7249">(reserved)</tspan></text>
     <text
        id="text7609"
        y="114.17284"
@@ -17729,7 +17729,7 @@
          y="655.13232"
          x="278.85263"
          id="tspan3406"
-         sodipodi:role="line">spritemeta-width0</tspan></text>
+         sodipodi:role="line">spritemeta-width0 (big endian first byte)</tspan></text>
     <text
        id="text3412"
        y="666.66351"
@@ -17751,7 +17751,7 @@
          y="658.9433"
          x="278.85263"
          id="tspan3414"
-         sodipodi:role="line">spritemeta-width1</tspan></text>
+         sodipodi:role="line">spritemeta-width1 (big endian second byte</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -17788,7 +17788,7 @@
          id="tspan3430"
          x="278.86984"
          y="662.88861"
-         style="stroke-width:0.26458332">0-126: spritemeta-height0</tspan></text>
+         style="stroke-width:0.26458332">0-126: spritemeta-height0 (big endian first byte)</tspan></text>
     <text
        id="text3437"
        y="666.69952"
@@ -17841,7 +17841,7 @@
          id="tspan3451"
          x="278.85263"
          y="680.00354"
-         style="stroke-width:0.26458332">spritemeta-xoffset0</tspan></text>
+         style="stroke-width:0.26458332">spritemeta-xoffset0 (big endian first byte)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -17863,7 +17863,7 @@
          id="tspan3459"
          x="278.85263"
          y="683.81451"
-         style="stroke-width:0.26458332">spritemeta-xoffset1</tspan></text>
+         style="stroke-width:0.26458332">spritemeta-xoffset1 (big endian second byte)</tspan></text>
     <text
        id="text3467"
        y="683.92114"
@@ -17900,7 +17900,7 @@
          y="687.75983"
          x="278.86984"
          id="tspan3475"
-         sodipodi:role="line">spritemeta-yoffset0</tspan></text>
+         sodipodi:role="line">spritemeta-yoffset0 (big endian first byte)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -17911,7 +17911,7 @@
          id="tspan3479"
          x="278.86984"
          y="691.57074"
-         style="stroke-width:0.26458332">spritemeta-yoffset1 (must be &gt;0)</tspan></text>
+         style="stroke-width:0.26458332">spritemeta-yoffset1 (big endian second byte)</tspan></text>
     <rect
        style="opacity:1;fill:#c83737;fill-opacity:0.39215686;stroke:none;stroke-width:0.26456684"
        id="rect3591"
@@ -19158,7 +19158,7 @@
          id="tspan6450"
          x="278.86984"
          y="670.93292"
-         style="stroke-width:0.26458332">spritemeta-height1 (must be &gt; 0)</tspan></text>
+         style="stroke-width:0.26458332">spritemeta-height1 (big endian second byte)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -19191,6 +19191,6 @@
          id="tspan4137"
          x="306.9166"
          y="671.86072"
-         style="stroke-width:0.26458332"></tspan></text>
+         style="stroke-width:0.26458332" /></text>
   </g>
 </svg>
