@@ -172,9 +172,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.3795957"
-     inkscape:cx="1491.0165"
-     inkscape:cy="1215.1453"
+     inkscape:zoom="1.5484209"
+     inkscape:cx="1312.2789"
+     inkscape:cy="2133.3391"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -852,7 +852,7 @@
          y="211.79718"
          x="278.8522"
          id="tspan12881"
-         sodipodi:role="line">sprite0</tspan></text>
+         sodipodi:role="line">point-sprite sprite0</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -889,7 +889,7 @@
          id="tspan12897"
          x="278.86942"
          y="215.74258"
-         style="stroke-width:0.26458332">sprite1</tspan></text>
+         style="stroke-width:0.26458332">point-sprite sprite1</tspan></text>
     <text
        id="text12903"
        y="219.55359"
@@ -1556,7 +1556,7 @@
          y="377.69095"
          x="278.85217"
          id="tspan13161"
-         sodipodi:role="line">sprite0</tspan></text>
+         sodipodi:role="line">line-label-sprite sprite0</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -1593,7 +1593,7 @@
          id="tspan13177"
          x="278.86938"
          y="381.63635"
-         style="stroke-width:0.26458332">sprite1</tspan></text>
+         style="stroke-width:0.26458332">line-label-sprite sprite1</tspan></text>
     <text
        id="text13183"
        y="385.44736"
@@ -5797,7 +5797,7 @@
          y="428.203"
          x="278.86942"
          id="tspan20161"
-         sodipodi:role="line">sprite0</tspan></text>
+         sodipodi:role="line">area-fill-pattern sprite0</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -5808,7 +5808,7 @@
          id="tspan20165"
          x="278.86942"
          y="432.01392"
-         style="stroke-width:0.26458332">sprite1</tspan></text>
+         style="stroke-width:0.26458332">area-fill-pattern sprite1</tspan></text>
     <text
        id="text20171"
        y="406.53732"
@@ -19173,7 +19173,7 @@
          y="500.08722"
          x="278.85196"
          id="tspan3625"
-         sodipodi:role="line">area-fill-pattern sprite0</tspan></text>
+         sodipodi:role="line">area-label-sprite sprite0</tspan></text>
     <text
        id="text3631"
        y="511.61838"
@@ -19195,7 +19195,7 @@
          y="503.89813"
          x="278.85196"
          id="tspan3633"
-         sodipodi:role="line">area-fill-pattern sprite1</tspan></text>
+         sodipodi:role="line">area-label-sprite sprite1</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52777767px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -19232,7 +19232,7 @@
          id="tspan3650"
          x="278.86917"
          y="507.84348"
-         style="stroke-width:0.26458332">(reserved)</tspan></text>
+         style="stroke-width:0.26458332">area-label-sprite-placement</tspan></text>
     <text
        id="text3656"
        y="511.65442"

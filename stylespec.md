@@ -15,6 +15,7 @@
  point-label-stroke-width    | 0-255             | not yet implemented
  point-label-priority        | 0-255             | not yet implemented
  point-label-constraints     |                   | not yet implemented
+ point-sprite                | file name         | not yet implemented
  line-fill-color             | color             |                             
  line-opacity                | 1-100             | 100 is fully opaque                 
  line-fill-width             | 0-255             | in pixels                           
@@ -39,6 +40,7 @@
  line-label-stroke-width     | 0-255             | not yet implemented
  line-label-priority         | 0-255             | not yet implemented
  line-label-constraints      |                   | not yet implemented
+ line-label-sprite           | file name         | not yet implemented
  line-label-sprite-placement |                   | not yet implemented
  area-fill-color             | color             |                                     
  area-fill-pattern           | file name         | not yet implemented                 
@@ -53,6 +55,8 @@
  area-label-stroke-width     | 0-255             | not yet implemented
  area-label-priority         | 0-255             | not yet implemented
  area-label-constraints      |                   | not yet implemented
+ area-label-sprite           | file name         | not yet implemented
+ area-label-sprite-placement |                   | not yet implemented
  area-border-color           | color             |                                     
  area-border-opacity         | 1-100             | 100 is fully opaque                 
  area-border-width           | 0-255             | in pixels                           
